@@ -1,0 +1,356 @@
+\documentclass[11pt]{report}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\newcommand{\me}{\mathrm{e}}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage[colorinlistoftodos]{todonotes}
+\oddsidemargin 1.48cm
+\evensidemargin .5cm
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\includegraphics[width=3.5cm]{logo_bvimit.png}\\
+
+% Name of your university/college
+\textsc{\Large \textbf{A \\ Project Report \\ on \\[0.25cm]FiifY-Online Fish \& Fish Products Application \\[0.25cm]}}\\[0.35cm] % Major heading 
+
+{ \it Mini Project Report submitted to \\ [0.35cm] \textbf{MASTER'S OF COMPUTER APPLICATIONS (SEM II)}\\[0.20cm]OF \\[0.30cm]UNIVERSITY OF MUMBAI\\ [0.35cm]by}\\[0.5cm]\textsc{\textbf{SAHIL PATOLE \\[0.35cm]Roll No : 49 A}}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+{{Under the guidance of \\ \textbf{ Dr. Kirti Muley}\\
+\includegraphics[width=3.5cm]{bvimitlogo.jpg}\\
+[0.15cm]{\textbf{Bharati Vidyapeeth’s 
+\\Institute of Management and Information Technology }}
+\\[0.15cm]Navi Mumbai\\[0.15cm]}{Batch 2021-23}
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+}\end{titlepage}
+
+
+\vfill % Fill the rest of the page with whitespace
+%\chapter*{Certificate}
+%\addcontentsline{toc}{chapter}{Certificate}
+\thispagestyle{empty}
+
+%\vspace*{-0.3cm}
+%\begin{center}  {\large \bf  UNIVERSITY OF MUMBAI}\vspace{0.1cm}\end{center}
+%\begin{center}  {\Large \bf Bharati Vidyapeeth’s Institute of Management and %Information Technology}\vspace{0.1cm}\end{center}
+%\begin{center}  {\large \bf Navi Mumbai}\vspace{0.1cm}\end{center}
+
+\begin{figure}[hbt]
+%\centerbmp{1.2in}{1.4in}{logo_bvimit.png}
+\centering
+\centerline{\includegraphics[scale=0.3]{logo_bvimit.png}}
+{\textbf{Bharati Vidyapeeth’s 
+\\Institute of Management and Information Technology }}
+\\[0.15cm]Navi Mumbai\\[0.15cm]
+\end{figure}
+
+\begin{center}  {\Large \textit {Certificate}}\vspace{.1cm}\end{center}
+\justify
+\doublespace
+ \textit {This is to certify that the mini project titled \textbf{ FiifY-Online Fish Products Application} is successfully done by\textbf{ Mr. SAHIL PATOLE} during the end of Semester-II in partial fulfilment of Master of Computer Application under the University of Mumbai, Mumbai through the Bharati Vidyapeeth’s Institute of Management and Information Technology, Navi Mumbai carried out by him under our guidance and supervision. }
+\\[1.cm]
+\\[1cm]
+\\[1cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\textbf{ Examiner}\\
+(Signature \& Date)\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.6\textwidth}
+\begin{flushleft} \large
+\textbf{Internal Guide}\\
+(Signature \& Date)\\
+\end{flushleft}
+\end{minipage}\\[2cm]
+\\[1cm]
+\\[1cm]
+\\[1cm]
+
+\thispagestyle{empty}
+\begin{center}  {\Large \textbf {CERTIFICATE}}\vspace{.1cm}\end{center}
+\justify
+\doublespace
+ \textit {This is to certify that the project titled “FiifY - Online Fish \& Fish Products Application” submitted by Mr. Sahil Patole to the University of Mumbai in partial fulfilment of the requirement for the
+award of Master of Computer Applications (SEM-II) during the academic year 2021-22.
+}
+\\[1cm]
+\\[1cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\textbf{ Sahil Patole}\\
+(Signature \& Date)\\
+\end{flushleft}
+\end{minipage}
+\\[1cm]
+\\[1cm]
+\\[1cm]
+\\[1cm]
+\\[1cm]
+
+\thispagestyle{empty}
+\begin{center}  {\Large \textbf {Declaration}}\vspace{.1cm}\end{center}
+\justify
+\doublespace
+ \textit {This is to certify that the mini project titled \textbf{ FiifY-Online Fish Products Application} is successfully done by\textbf{ Mr.Sahil Patole} during the end of Semester-II in partial fulfilment of Master of Computer Application under the University of Mumbai, Mumbai through the Bharati Vidyapeeth’s Institute of Management and Information Technology, Navi Mumbai carried out by him/her under our guidance and supervision. }
+\\[1cm]
+\\[1cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\textbf{ Jyotirmayee Barik}\\
+(Signature \& Date)\\
+\end{flushleft}
+\end{minipage}
+\\[1cm]
+\\[1cm]
+\\[1cm]
+\\[1cm]
+\\[1cm]
+\\[1cm]
+
+\thispagestyle{empty}
+\begin{center}  {\textbf {Acknowledgment}}\vspace{.1cm}\end{center}
+\justify
+\doublespace
+\textbf{I avail this opportunity to express my sincere and deep gratitude to many who are a factor in
+helping me gain the knowledge and experience during the project and throughout the course.
+I have great pleasure in presenting this project. The completion of this project is not merely due
+to only my own efforts but also due to the guidance given by our professors.
+I am thankful to our project guide Dr. Kirti Muley for her support. I also thank Dr.
+Suhasini Vijaykumar, in charge Principal BVIMIT and respected faculty members for their
+kind support and help throughout the entire course.
+Finally, I express my deep regards to all of those who stretch their helping in the execution of
+my project. 
+}
+\\[1cm]
+\\[1cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\textbf{ Sahil Patole}\\
+(Signature \& Date)\\
+\end{flushleft}
+\end{minipage}
+
+\thispagestyle{empty}
+\newpage
+%\thispagestyle{empty}
+%\doublespacing
+\thispagestyle{empty} \tableofcontents
+\thispagestyle{empty}
+\date{}
+\maketitle
+\newpage
+\chapter{Introduction}
+One must have ordered Fish and Fish Products from Fish Market. The process seems easy to use but at in this new Online World, almost everyone wants everything at their Home. Also, if someday, User want Fish but he sees the Shop Is Closed, so the party goes off. So, there must be a Solution for it so that people can order their Fish & Fish Products online and get them delivered with the minimum time. It will hassle free for users as they can select their Fish Products and make the payment for it. 
+		Also, it will help the customers by getting their orders sitting at their home as well as in minimum time you can get your orders.  It would be great for me as the User don’t need to buy Fish and Fish Products Offline. In a nutshell, we can say that improved and efficient services are provided to the customers by the inclusion of internet in your business.
+
+\newpage
+Objective Of Project\\
+The main Objective of Fish and Fish Products Application is that the Customer can get Fish Products at minimum Price ONLINE using this Cross-platform Application.\\
+1.	100 \% Customer Satisfaction and minimum Delivery Time.
+\\
+2.	Easy Interface for Customer with Plenty of Varieties.\\
+3.	Good Experience.\\
+4.	User Friendly.\\
+5.	All under One roof with easily and durable maintenance.
+
+
+
+\chapter{Project Scope}
+
+\section{Scope of Project}
+•	FiifY is a Dynamic Cross-platform Application which is developed in FLUTTER.\\ 
+•	This Application is developed to Override the problems in the existing system. This Cross-platform Application is simple with User-friendly Interface so that it will make Customers more willing to Order the Products from this Application. \\
+•	This Application includes Login, Signup feature as well as Locate us feature with Google Maps access. \\
+•	The user can buy the Fresh Fish & Delicious Fish Products available from this Cross-platform Application and get it in minimum time as per customer requirement. 
+
+
+
+\chapter{System Study}
+\section{Existing System}
+Many Restaurants stores and maintain their day-to-day transactions manually. But some of them are having automation system which is helping them to store the data. 
+		But such restaurants are storing the information about the orders and the customer information. They don’t have facility to store the information of feedbacks and favorite orders of customers over some period of time.
+		Restaurants are having standalone applications so at one time, they have the facility of many screens or many operations which is happening at one time. So, they are storing them and them at last, the restaurant managers will able to see the data of last day.	
+
+\section{Disadvantage of Existing System}
+1. The Main problem with the existing system is Price Factor where Every other 			Business is taking high charges for Ordering Fish. 
+\\
+		2. All accounts are categorized in Economical, Moderate, Premium types which are 		way more than expensive for Customer.
+		\\
+		3. Many times, The Delivery gets Cancelled which may disturb the Customer and 			create a bad impression on the Application.
+
+\section{Proposed System}.
+The proposed system helps in many ways. It helps to do billing very easily. Account maintenance also becomes easier. They can keep track of their purchases of inventories, staff’s details, customer feedback, sales of foods, and account details etc. The software is provided with the facilities to find out the favorite food of the customers, and the seasonal foods, or customers to add or modify and delete their feedbacks and suggestions. 
+                    It helps in managing data of different types of orders like party order, home delivery or the normal order. Managing data of daily customers, managing data of staffs, managing data of daily expenses. It eliminates the drawbacks of existing system and also includes some more features.
+\newpage
+                    
+\subsection{Proposed System}
+The below diagram Fig3.3.1 is the proposed system which is better than the current system. The proposed system overcomes the needs of the User in a better way.
+\\
+\includegraphics[width=11cm]{image1.jpg}
+\\Fig3.3.1 Proposed System of The Application
+
+\newpage
+\subsection{Use Case Diagram}
+The Use Case diagram Fig3.3.2 describes how the User as well as actors involved in the Application play an important role. The below diagram shows the following.
+\\
+\includegraphics[width=11cm]{image2.jpg}
+\\Fir3.3.2 Use Case Diagram of FiifY - Fish & Fish Products Application
+
+
+
+\chapter{Analysis and Design}
+I have analysed the technical feasibility of the project based on the following factors
+\section {Software Requirement}
+Language Used : Flutter
+\\
+IDE used : Android Studio, Visual Studio Code
+
+\section{Hardware Requirement}
+1. Any Smartphone with 80MB space.
+\\
+2. Any Smartphone with 2 GB Ram
+\\
+3. Android / IOS with minimum OS.
+
+
+\section{Diagrams and Charts}
+
+\subsection{GANTT Chart}
+
+A Gantt chart is a commonly used graphical depiction of a project schedule. It's a type of bar chart showing the start and finish dates of a project's elements such as resources, planning and dependencies. This Gantt chart Fig 4.3.1 shows how the project planning, elements were Organized accordingly.
+
+\\[1cm]
+
+\includegraphics[width=13cm]{image3.png}
+Fig: 4.3.1 GANTT Chart 
+\\
+
+\newpage
+\subsection{Flowchart}
+A User flow is a chart or diagram showing the path a user will take in an application to complete a task. The following User Flow diagram Fig 4.3.2 show every area of how the user can go to and how he can buy the Products from Application.
+
+\includegraphics[width=16cm, height=13cm]{image4.jpg}
+Fig 4.3.2 User Flow Diagram
+
+
+\chapter{Testing and Validation}
+\section{Test Cases and Report (Based on manual &
+automation testing)
+}
+
+We are using Flutter development model that means while deployment we are performing our test case scenario manually.
+
+Currently we don't have any issues and Application is working flawlessly.
+
+\chapter{User Manual}
+\section{Explanation of Key Functions}
+Cart items can only be deleted by the user who created that Cart
+User can create separate categories. New User can Login to the system and Add the products to the Cart.
+\section{Method of Implementation}
+The project has been completed successfully as specified by the requirements. The
+implementation and testing have been done in a step-by-step manner. Each module has been
+developed and tested individually to obtain the required output in the desired form. On our
+way working on this interesting project, we learned many things. While working on this
+project, we got valuable experience on the stages involved while developing any Cross-Platform application that could be useful while working for a professional company.
+During the duration of this project, we learned the following things through the
+implementation and testing of the project:
+\\
+• Flutter Language
+\\
+• Designing
+
+\newpage
+\subsection{Screen Outputs}
+\textbf{Home Page of Application}
+\\[2cm]
+\includegraphics[width=16cm]{image7.png}
+\\[2cm]
+\textbf{Home Page of Application}
+\\[2cm]
+\includegraphics[width=16cm]{image8.png}
+\\[2cm]
+\textbf{Fig 6.2.2.1 Product View}
+\\[2cm]
+\includegraphics[width=16cm]{image9.png}
+\\[2cm]
+\textbf{Fig 6.2.2.2 Product Description View}
+\\[2cm]
+\includegraphics[width=16cm]{image10.png}
+\\[2cm]
+\textbf{Fig 6.2.2.3 Cart View}
+\\[2cm]
+\includegraphics[width=16cm]{image11.png}
+\\[2cm]
+\textbf{Fig 6.2.2.4 User View}
+\\[2cm]
+\includegraphics[width=16cm]{image12.png}
+\\[2cm]
+\textbf{Fig 6.2.2.5 Cart View}
+\\[2cm]
+\newpage
+
+\chapter{Conclusion}
+\section{Project Conclusion and Future enhancement}
+\subsection{Project Conclusion}
+•	The proposed system can overcome all the limitations of the existing system. \\
+•	The system provides proper security and reduces the manual work.\\ 
+•	This project is only a humble venture to satisfy the needs to manage their project work. \\
+•	This package shall prove to be a powerful package in satisfying all the requirements of the Business. \\
+
+\subsection{Future enhancement}
+•	User can Locate their delivery using the Application in real time.\\
+•	Chatbot can be built for solving queries of the customer.\\
+•	The Cross-platform Application can be collaborated with Zomato & Swiggy.\\
+•	Website can be developed for the same Application.
+
+
+\newpage 
+
+\appendix
+
+\chapter{Reference and Links }
+ Flutter Tutorial - https://www.youtube.com/watch?v=j-LOab\_PzzU\&t=7414s
+ \\[0.5cm]
+ Repository - https://github.com/patolesahil5
+  \\[0.5cm]
+ https://www.tutorialspoint.com/
+codeigniter/index.htm
+ \\[0.5cm]
+ Error Solving - https://stackoverflow.com/
+ \\[0.5cm]
+\newpage
+
+
+\end{document}
